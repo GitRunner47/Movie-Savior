@@ -1,0 +1,167 @@
+/* Define basic colors for standard bootstrap alert classes, scoped to .container#flash */
+
+.container#flash {
+
+    .alert {
+        padding: 1rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .alert-primary {
+        background-color: #cfe2ff;
+        color: #084298;
+    }
+
+    .alert-secondary {
+        background-color: #e2e3e5;
+        color: #41464b;
+    }
+
+    .alert-success {
+        background-color: #d1e7dd;
+        color: #0f5132;
+    }
+
+    .alert-danger {
+        background-color: #f8d7da;
+        color: #842029;
+    }
+
+    .alert-warning {
+        background-color: #fff3cd;
+        color: #664d03;
+    }
+
+    .alert-info {
+        background-color: #cff4fc;
+        color: #055160;
+    }
+
+    .alert-light {
+        background-color: #fefefe;
+        color: #636464;
+    }
+
+    .alert-dark {
+        background-color: #212529;
+        color: #fff;
+    }
+}
+
+nav li {
+    display: inline;
+    background-color: rgb(238, 238, 238);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+nav li a {
+    color: rgb(4, 86, 179);
+    padding: .25rem;
+}
+
+
+nav li a:hover {
+    color: rgb(86, 145, 211);
+}
+
+label {
+    border: #212529 dashed 2px;
+    background-color: bisque;
+    border-radius: 5px;
+    margin: 25px 50px 15px;
+    padding: 2px 5px;
+    color: black;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+input {
+    border-radius: 25%;
+    padding: .25rem;
+    border-style: solid;
+}
+
+button {
+    /*margin: 25px;
+    border-radius: 5px;*/
+    font-family: Courier, sans-serif;
+}
+
+h1 + p {
+    /*color: coral; */
+    font-family: Georgia, Garamond, serif;
+}
+
+h1.login, h1.register {
+
+    font-family: Verdana, sans-serif;
+    position: relative;
+    left: 150px;
+    text-wrap: nowrap;
+    font-size: 50px;
+    display: inline-block;
+    text-shadow: 2px 2px 5px pink;
+}
+
+form,
+h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgb(128, 232, 250);
+    color: rgb(0, 0, 0);
+    /*font-family: Georgia, Garamond, serif;*/
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: Verdana, sans-serif;
+        /* text-shadow: 2px 2px 5px rgb(252, 83, 83); */
+        text-shadow: 2px 2px 5px pink;
+    }
+    h2 {
+        color: rgb(255, 202, 202);
+        font-family: Georgia, Garamond, serif;
+        font-size: 22px;
+        text-shadow: 1px 1px 2px rgb(0, 7, 109);
+    }
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.15);
+}
+
+input[type="submit"]:active {
+    transform: scale(.75);
+}
+
+input {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+/*table, th, td {
+    border: 1px solid black;
+    color: green;
+}*/
+
+table label {
+    /*display: inline-block;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /*max-width: 200px;
+    border: 25% solid;
+    background-color: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 2px;
+    color: black;*/
+}

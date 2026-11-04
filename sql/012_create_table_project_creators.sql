@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Creators (
+    id INT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    creator VARCHAR(50) NOT NULL
+)

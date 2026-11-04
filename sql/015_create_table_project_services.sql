@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Services (
+    id INT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    service VARCHAR(20) NOT NULL
+)

@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Genre (
+    id INT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    genre VARCHAR(20) NOT NULL
+)
