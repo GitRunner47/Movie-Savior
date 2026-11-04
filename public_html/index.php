@@ -1,4 +1,1 @@
-<?php
-header("Location: /project");
-exit;
-?>
+<li><a href="<?= htmlspecialchars("project") ?>/"><?= htmlspecialchars("Project") ?></a></li>

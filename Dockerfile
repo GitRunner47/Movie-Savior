@@ -12,7 +12,7 @@ RUN docker-php-ext-install pdo pdo_mysql curl
 
 # 3. SET THE WEB ROOT TO public_html
 # We define an environment variable for the new path
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public_html/project
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public_html
 
 # Use 'sed' to update the Apache configuration files to point to the new directory
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
