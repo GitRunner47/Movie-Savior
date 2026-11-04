@@ -1,3 +1,3 @@
 <?php
-header("Location: " . project_url("index.php"));
+header("Location: /project/index.php");
 exit;
