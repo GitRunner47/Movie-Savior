@@ -115,7 +115,7 @@ The application uses:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/GitRunner47/Movie-Savior
+   git clone https://github.com/GitRunner47/Movie-Savior.git
    ```
 
 2. Navigate into the project directory:
