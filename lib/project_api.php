@@ -97,3 +97,44 @@ function search_shows(string $title, string $show_type, array &$errors): array
 
     return $shows;
 }
+
+/**
+ * Returns a trimmed string or null for a missing, empty, or non-string value.
+ *
+ * @param mixed $value API value to normalize.
+ * @return string|null Clean string or null.
+ */
+function sc_nullable_string(mixed $value): ?string
+{
+    if (!is_string($value)) {
+        return null;
+    }
+
+    $value = trim($value);
+    if ($value === "") {
+        return null;
+    }
+
+    return $value;
+}
+
+/**
+ * Returns a safe HTTP(S) URL or null.
+ *
+ * @param mixed $value API value to validate.
+ * @return string|null Valid URL or null.
+ */
+function sc_nullable_url(mixed $value): ?string
+{
+    $url = sc_nullable_string($value);
+    if ($url === null || filter_var($url, FILTER_VALIDATE_URL) === false) {
+        return null;
+    }
+
+    $scheme = strtolower((string) parse_url($url, PHP_URL_SCHEME));
+    if (!in_array($scheme, ["http", "https"], true)) {
+        return null;
+    }
+
+    return $url;
+}
