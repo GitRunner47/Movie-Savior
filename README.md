@@ -18,7 +18,7 @@ This project was developed as part of my coursework at the **New Jersey Institut
 - **User Authentication:** Support user authentication and account-related functionality.
 - **Role-Based Authorization:** Restrict application functionality based on user roles.
 - **External API Integration:** Retrieve movie-related streaming information using the Streaming Availability API.
-- **API Data Import:** Admin page that stores Streaming Availability API data in MySQL without duplicates.
+- **API Data Import:** Admin page that imports Streaming Availability API data into MySQL, adding new movies and updating existing ones.
 - **Error Handling:** Handle unsuccessful external API requests.
 - **Application Security:** Implement server-side input validation and CSRF protection.
 
