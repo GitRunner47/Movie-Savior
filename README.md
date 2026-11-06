@@ -176,7 +176,7 @@ Developing Movie Savior provided practical experience with:
 - Improve database query performance.
 - Expand application functionality and movie filtering.
 - Enhance the user experience and responsive design.
-- Improve API caching strategies and error handling.
+- Add scheduled data refreshes to keep availability current.
 - Add automated deployment and continuous integration.
 
 ---
