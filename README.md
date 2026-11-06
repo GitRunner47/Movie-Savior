@@ -18,7 +18,7 @@ This project was developed as part of my coursework at the **New Jersey Institut
 - **User Authentication:** Support user authentication and account-related functionality.
 - **Role-Based Authorization:** Restrict application functionality based on user roles.
 - **External API Integration:** Retrieve movie-related streaming information using the Streaming Availability API.
-- **API Response Caching:** Store parsed API responses in MySQL to reduce repeated external API requests.
+- **API Data Import:** Admin page that stores Streaming Availability API data in MySQL without duplicates.
 - **Error Handling:** Handle unsuccessful external API requests.
 - **Application Security:** Implement server-side input validation and CSRF protection.
 
@@ -164,7 +164,7 @@ Developing Movie Savior provided practical experience with:
 - Database-driven CRUD operations.
 - Authentication and role-based authorization.
 - REST API integration and HTTP requests.
-- JSON parsing and API response caching.
+- JSON parsing and storing API data in MySQL.
 - Application security and server-side validation.
 - Application architecture and project organization.
 
