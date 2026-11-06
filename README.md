@@ -1,27 +1,26 @@
-## **Update in Progress: Please wait until the migration process is complete
 # 🎬 Movie Savior
 
-### A Full-Stack Movie Discovery and Bookmarking Application
+### A Full-Stack Movie Discovery & Bookmarking Platform
 
-Movie Savior is a database-driven web application developed as part of my IT202 coursework at the New Jersey Institute of Technology (NJIT).
+Movie Savior is a full-stack web application that allows users to discover movies, explore available streaming information, and bookmark movies through an interactive interface.
 
-The application provides an interactive interface for browsing and saving movie cards, supported by a PHP backend, MySQL database, and external API integration.
+Built using **PHP, MySQL, JavaScript, and Bootstrap**, the application combines database-driven functionality, external API integration, user authentication, and role-based authorization.
 
-This project demonstrates my experience with full-stack web development, relational databases, backend programming, API integration, and secure web application development.
+This project was developed as part of my coursework at the **New Jersey Institute of Technology (NJIT)**.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-- **Movie Discovery:** Browse movies through an interactive interface.
-- **Movie Bookmarking:** Save movies through database-driven functionality.
-- **Database Management:** Implemented CRUD operations using PHP and MySQL.
-- **User Authentication:** Implemented user authentication functionality.
-- **Role-Based Authorization:** Enforced access control based on user roles.
-- **External API Integration:** Integrated the Streaming Availability API using PHP cURL.
-- **API Response Caching:** Store parsed JSON API responses in MySQL to support efficient data retrieval.
-- **Error Handling:** Handle failed external API requests.
-- **Application Security:** Implemented server-side input validation and CSRF protection.
+- **Movie Discovery:** Browse movies through an interactive movie discovery interface.
+- **Movie Bookmarking:** Save and manage movies using database-backed functionality.
+- **CRUD Operations:** Perform Create, Read, Update, and Delete operations using PHP and MySQL.
+- **User Authentication:** Support user authentication and account-related functionality.
+- **Role-Based Authorization:** Restrict application functionality based on user roles.
+- **External API Integration:** Retrieve movie-related streaming information using the Streaming Availability API.
+- **API Data Import:** Admin page that imports Streaming Availability API data into MySQL, adding new movies and updating existing ones.
+- **Error Handling:** Handle unsuccessful external API requests.
+- **Application Security:** Implement server-side input validation and CSRF protection.
 
 ---
 
@@ -34,132 +33,157 @@ This project demonstrates my experience with full-stack web development, relatio
 | UI Framework | Bootstrap |
 | Database | MySQL |
 | API Integration | REST APIs, PHP cURL |
+| Database Access | PDO / MySQL |
+| Containerization | Docker |
 | Version Control | Git, GitHub |
 
 ---
 
 ## 🏗️ Application Architecture
 
-Movie Savior uses a full-stack architecture connecting the frontend, PHP backend, database, and external API.
+Movie Savior follows a full-stack architecture connecting the frontend, backend application logic, database, and external API services.
 
-### Frontend
+### 1. Frontend
+
 - HTML and CSS for application structure and styling.
 - JavaScript for interactive functionality.
-- Bootstrap for interface components and responsive layouts.
+- Bootstrap for responsive layouts and UI components.
 
-### Backend
-- PHP for server-side application logic.
-- Database-driven CRUD operations.
-- Authentication and role-based authorization.
-- Server-side input validation.
-- External API communication using PHP cURL.
+### 2. Backend
 
-### Database
-- MySQL for persistent application data.
-- Database-driven movie management.
-- Storage of parsed JSON responses from the external API.
+- PHP handles server-side application logic.
+- Database-driven CRUD operations manage application data.
+- Authentication and role-based authorization control access.
+- Server-side validation processes user input.
+- PHP cURL handles communication with external APIs.
 
-### External Services
-- Streaming Availability API for external movie-related data.
-- PHP cURL for API communication.
+### 3. Database
+
+- MySQL provides persistent data storage.
+- Database operations support movie management and bookmarking.
+- Parsed JSON API responses are stored for caching and subsequent retrieval.
+
+### 4. External API Integration
+
+- Integrates the Streaming Availability API to retrieve movie-related streaming information.
+- Uses PHP cURL to communicate with the external service.
+- Processes JSON responses and stores relevant data in MySQL.
 
 ---
 
-## 🔐 Security Implementation
+## 🔐 Security Considerations
 
-Security was an important consideration during development.
+Security was an important consideration throughout development.
 
 The application incorporates:
 
 - **Authentication:** User authentication functionality.
 - **Authorization:** Role-based access control.
 - **CSRF Protection:** Protection against Cross-Site Request Forgery.
-- **Server-Side Validation:** Validation of user input on the backend.
-- **API Error Handling:** Handling failed requests to external services.
+- **Input Validation:** Server-side validation of user-submitted data.
+- **API Error Handling:** Handling unsuccessful external service requests.
 
 ---
 
-## 📸 Screenshots
+## 📸 Application Screenshots
 
-<!-- Add screenshots captured from the actual application. -->
+Screenshots provide a visual overview of Movie Savior's interface and functionality.
 
-| Application Interface | Description |
-|---|---|
-| Homepage | Movie discovery and browsing interface |
-| Movie Cards | Interactive movie presentation |
-| User Interface | Application functionality and user interactions |
+### Homepage
 
-### HomePage
-<img width="1248" height="542" alt="HomePage" src="https://github.com/user-attachments/assets/d49839b9-67d4-46d2-9f27-c1f6ed37f463" />
+![Movie Savior Homepage](screenshots/homepage.png)
 
-### Movie Cards
-<img width="1384" height="815" alt="Movie Cards" src="https://github.com/user-attachments/assets/096b2d90-fddd-4308-8668-cc066aab3804" />
+### Movie Discovery
+
+![Movie Discovery Interface](screenshots/movie-discovery.png)
+
+### Movie Details and Bookmarking
+
+![Movie Details and Bookmarking](screenshots/movie-details.png)
 
 ### User Interface
-<img width="1654" height="638" alt="User Interface" src="https://github.com/user-attachments/assets/92407fbd-c567-4a72-b349-d793ea7d4567" />
+
+![Movie Savior User Interface](screenshots/user-interface.png)
+
+---
 
 ## ⚙️ Installation and Setup
 
 ### Prerequisites
 
-The application uses:
+Before running the application, ensure you have:
 
-- PHP
+- PHP 8.x with the required extensions
 - MySQL
-- A web server capable of running PHP
-- A browser
+- Apache or another compatible PHP web server
 - Git
+- A Streaming Availability API credential, if required by your configuration
 
-### Getting Started
+### 1. Clone the Repository
 
-1. Clone the repository:
+```bash
+git clone https://github.com/GitRunner47/Movie-Savior.git
+```
 
-   ```bash
-   git clone https://github.com/GitRunner47/Movie-Savior.git
-   ```
+### 2. Navigate to the Project Directory
 
-2. Navigate into the project directory:
+```bash
+cd Movie-Savior
+```
 
-   ```bash
-   cd Movie-Savior
-   ```
+### 3. Configure the Database
 
-3. Configure your PHP environment and MySQL database.
+- Create a MySQL database.
+- Locate the SQL schema in the `sql/` directory.
+- Import the appropriate SQL files into your database.
+- Configure the database connection using the application's existing configuration structure.
 
-4. Create the application database and import the project's SQL schema.
+### 4. Configure External API Access
 
-5. Configure the database connection and any required external API settings.
+Configure the required Streaming Availability API credentials according to the application's configuration.
 
-6. Start the application using your configured PHP web server.
+Avoid committing API keys, database passwords, or other sensitive credentials to version control.
 
-**Note:** Refer to the project's database and configuration files for the exact database name, schema location, connection settings, and API configuration.
+### 5. Start the Application
+
+Configure your PHP-compatible web server to serve the `public_html/` directory as the document root.
+
+Open the application in your browser using your configured local server address.
+
+**Docker:** The repository also includes a Dockerfile for building the PHP/Apache application container. The MySQL database must be configured separately.
 
 ---
 
-## 📚 What I Learned
+## 🧠 Technical Skills Demonstrated
 
-Developing Movie Savior strengthened my understanding of:
+Developing Movie Savior provided practical experience with:
 
 - Full-stack web application development.
-- Backend programming with PHP.
-- Relational database management with MySQL.
+- Server-side programming using PHP.
+- Relational database design and MySQL.
 - Database-driven CRUD operations.
 - Authentication and role-based authorization.
-- REST API integration and external service communication.
-- JSON parsing and database caching.
-- Secure web application development.
-- Debugging and handling failed API requests.
+- REST API integration and HTTP requests.
+- JSON parsing and storing API data in MySQL.
+- Application security and server-side validation.
+- Application architecture and project organization.
 
 ---
 
-## 🔮 Potential Future Improvements
+## 🚀 Potential Future Improvements
 
-- Expand automated backend testing.
-- Improve application performance and database queries.
-- Enhance frontend usability and responsiveness.
-- Expand API integration and error handling.
-- Further strengthen application security.
-- Improve application deployment and documentation.
+- Implement automated backend testing.
+- Improve database query performance.
+- Expand application functionality and movie filtering.
+- Enhance the user experience and responsive design.
+- Improve API caching strategies and error handling.
+- Add automated deployment and continuous integration.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -172,8 +196,7 @@ New Jersey Institute of Technology (NJIT)
 
 - GitHub: [@GitRunner47](https://github.com/GitRunner47)
 - LinkedIn: [Krish Viradia](https://www.linkedin.com/in/krish-viradia/)
-- Email: kricollege11@gmail.com
 
 ---
 
-*Developed as an academic full-stack web development project at NJIT.*
+*Developed as a full-stack web development project at NJIT.*
